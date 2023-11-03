@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_46e350889f584b1f8bcc930326d15884 }}/terryxper/chatgpt-next-web:${{ github.sha }}
+        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_46e350889f584b1f8bcc930326d15884 }}/terryxper/sage-chatgpt:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
@@ -48,4 +48,4 @@ jobs:
         app-name: 'sage-chatgpt-next'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_afff46d2ee054f54baf19cf2a47ec820 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_46e350889f584b1f8bcc930326d15884 }}/terryxper/chatgpt-next-web:${{ github.sha }}'
+        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_46e350889f584b1f8bcc930326d15884 }}/terryxper/sage-chatgpt:${{ github.sha }}'
