@@ -9,7 +9,7 @@
   },
   "package": {
     "productName": "ChatGPT Next Web",
-    "version": "2.9.9"
+    "version": "2.9.5"
   },
   "tauri": {
     "allowlist": {
@@ -44,12 +44,6 @@
         "startDragging": true,
         "unmaximize": true,
         "unminimize": true
-      },
-      "fs": {
-        "all": true
-      },
-      "notification": {
-        "all": true
       }
     },
     "bundle": {
