@@ -158,7 +158,7 @@ export function SideBar(props: { className?: string }) {
           SAGE ChatGPT
         </div>
         <div className={styles["sidebar-sub-title"]}>
-          Your AI assistant.
+          Your AI assistant. (GPT-4o)
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
