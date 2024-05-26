@@ -29,8 +29,8 @@ const config = getClientConfig();
 export const DEFAULT_CONFIG = {
   lastUpdate: Date.now(), // timestamp, to merge state
 
-  submitKey: SubmitKey.Enter,
-  avatar: "1f61c",
+  submitKey: SubmitKey.CtrlEnter,
+  avatar: "1f917",
   fontSize: 14,
   theme: Theme.Auto as Theme,
   tightBorder: !!config?.isApp,
