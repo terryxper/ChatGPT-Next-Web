@@ -48,7 +48,7 @@ export const DEFAULT_CONFIG = {
 
   modelConfig: {
     model: "gpt-4o" as ModelType,
-    temperature: 0.5,
+    temperature: 0.7,
     top_p: 1,
     max_tokens: 20000,
     presence_penalty: 0,
@@ -144,7 +144,7 @@ export const useAppConfig = createPersistStore(
         state.modelConfig.frequency_penalty = 0;
         state.modelConfig.top_p = 1;
         state.modelConfig.template = DEFAULT_INPUT_TEMPLATE;
-        state.dontShowMaskSplashScreen = false;
+        state.dontShowMaskSplashScreen = true;
         state.hideBuiltinMasks = false;
       }
 
