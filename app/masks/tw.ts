@@ -35,7 +35,7 @@ export const TW_MASKS: BuiltinMask[] = [
       historyMessageCount: 32,
       compressMessageLengthThreshold: 1000,
     },
-    lang: "cn",
+    lang: "tw",
     builtin: true,
     createdAt: 1688899480510,
   },
