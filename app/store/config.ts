@@ -41,8 +41,8 @@ const config = getClientConfig();
 export const DEFAULT_CONFIG = {
   lastUpdate: Date.now(), // timestamp, to merge state
 
-  submitKey: SubmitKey.Enter,
-  avatar: "1f603",
+  submitKey: SubmitKey.CtrlEnter,
+  avatar: "1f917",
   fontSize: 14,
   fontFamily: "",
   theme: Theme.Auto as Theme,
@@ -57,22 +57,22 @@ export const DEFAULT_CONFIG = {
 
   disablePromptHint: false,
 
-  dontShowMaskSplashScreen: false, // dont show splash screen when create chat
+  dontShowMaskSplashScreen: true, // dont show splash screen when create chat
   hideBuiltinMasks: false, // dont add builtin masks
 
   customModels: "",
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "gpt-4o-mini" as ModelType,
-    providerName: "OpenAI" as ServiceProvider,
-    temperature: 0.5,
+    model: "gpt-4o" as ModelType,
+    providerName: "Azure" as ServiceProvider,
+    temperature: 0.7,
     top_p: 1,
-    max_tokens: 4000,
+    max_tokens: 20000,
     presence_penalty: 0,
     frequency_penalty: 0,
     sendMemory: true,
-    historyMessageCount: 4,
+    historyMessageCount: 20,
     compressMessageLengthThreshold: 1000,
     compressModel: "",
     compressProviderName: "",
@@ -221,7 +221,7 @@ export const useAppConfig = createPersistStore(
         state.modelConfig.frequency_penalty = 0;
         state.modelConfig.top_p = 1;
         state.modelConfig.template = DEFAULT_INPUT_TEMPLATE;
-        state.dontShowMaskSplashScreen = false;
+        state.dontShowMaskSplashScreen = true;
         state.hideBuiltinMasks = false;
       }
 
