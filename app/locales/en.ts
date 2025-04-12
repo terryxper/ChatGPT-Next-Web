@@ -629,7 +629,7 @@ const en: LocaleType = {
   },
   Store: {
     DefaultTopic: "New Conversation",
-    BotHello: "Hello! How can I assist you today?",
+    BotHello: "Hi, SAGE people! How can I assist you today?",
     Error: "Something went wrong, please try again later.",
     Prompt: {
       History: (content: string) =>
