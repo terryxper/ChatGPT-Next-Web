@@ -68,7 +68,7 @@ export const DEFAULT_CONFIG = {
     providerName: "Azure" as ServiceProvider,
     temperature: 0.7,
     top_p: 1,
-    max_tokens: 20000,
+    max_tokens: 16384,
     presence_penalty: 0,
     frequency_penalty: 0,
     sendMemory: true,
